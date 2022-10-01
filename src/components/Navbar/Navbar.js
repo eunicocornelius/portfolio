@@ -13,9 +13,11 @@ function Navbar() {
 
   return (
     <nav className='NavbarItems'>
-        <h1 className='logo'>Eunico Cornelius <i className='fab fa-react'></i></h1>
-        <div className='menu-icons' onClick={handleHamburger}>
-            <i className={hamburger.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        <div className='nav-main'>
+            <h1 className='logo'><i className='fas fa-meteor'></i> Eunico Cornelius </h1>
+            <div className='menu-icons' onClick={handleHamburger}>
+                <i className={hamburger.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+            </div>
         </div>
         <ul className={hamburger.clicked ? 'nav-menu active' : 'nav-menu'}>
             {
